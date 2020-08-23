@@ -9,6 +9,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8084/eureka/
 zuul:
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 60000
   routes:
     orders:
       path: /order-service/**
@@ -19,5 +22,8 @@ zuul:
     user-authentication:
       path: /user-authentication-service/**
       url: http://localhost:8081/
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 20000      
     
   
