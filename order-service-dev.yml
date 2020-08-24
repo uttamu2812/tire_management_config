@@ -13,10 +13,6 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 server:
   port: 8083
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8084/eureka/
 logging:
   file: logs/application.log
   pattern:
