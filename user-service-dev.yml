@@ -12,13 +12,6 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect  
 server:
   port: 8082
-logging:
-  file: logs/application.log
-  pattern:
-    console: "%d %-5level %logger : %msg%n"
-    file: "%d %-5level [%thread] %logger : %msg%n"
-  level:
-    com.cts.mc: INFO
   
 swagger:
    api-info:
