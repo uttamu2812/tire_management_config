@@ -10,18 +10,6 @@ spring:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect  
 server:
   port: 8081
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8084/eureka/
-logging:
-  file: logs/application.log
-  pattern:
-    console: "%d %-5level %logger : %msg%n"
-    file: "%d %-5level [%thread] %logger : %msg%n"
-  level:
-    com.cts.mc: INFO
-    org.springframework: INFO
   
 swagger:
    api-info:
